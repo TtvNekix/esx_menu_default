@@ -1,0 +1,144 @@
+@font-face {
+	font-family: bankgothic;
+	src: url('../fonts/bankgothic.ttf');
+}
+
+@font-face {
+	font-family: pcdown;
+	src: url('../fonts/pdown.ttf');
+}
+
+@font-face {
+	font-family: keepcalm;
+	src: url('../fonts/keepcalm.ttf');
+}
+
+@font-face {
+	font-family: chewy;
+	src: url('../fonts/Chewy-Regular.ttf');
+}
+
+@font-face {
+	font-family: steeltongs;
+	src: url('../fonts/steeltongs.ttf');
+}
+
+@font-face {
+	font-family: heading;
+	src: url('../fonts/heading.ttf');
+}
+
+@font-face {
+	font-family: trumpgothic;
+	src: url('../fonts/trumpgothic.ttf');
+}
+
+@keyframes beat {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+.menu {
+	font-family: bankgothic;
+	min-width: 200px;
+	color: #fff;
+	height: 10px;
+	position: absolute;
+	animation: beat 1s;
+}
+
+.menu.align-left {
+	left: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 40;
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+	right: 10;
+	top: 40;
+}
+
+.menu.align-right {
+	right: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 40;
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 40;
+}
+
+.menu.align-center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu .head {
+	background: rgb(0, 17, 252);
+	text-align: center;
+	height: 10px;
+	line-height: 0px;
+	font-size: 24px;
+	font-family: trumpgothic;
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-radius: 20px;
+	border: 5px solid rgb(9, 0, 88);
+	}
+
+.menu .menu-items {
+	max-height: 400px;
+	overflow-y: hidden;
+}
+
+.menu .menu-items .menu-item {
+	height: 30px;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 32px;
+	line-height: 32px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	border-radius: 20px;
+	margin:10px;
+}
+
+.menu .menu-items .menu-item.selected {
+	background-color: rgb(2, 82, 255);
+	transform: scaleX(0.8);
+	border-radius: 20px;
+}
